@@ -45,18 +45,18 @@ const AddDoctor = () => {
                 console.log(`${key}:${value}`);
             })
 
-                // const response = await fetch(`${backendUrl}/api/admin/add-doctors`, {
-                //   method: 'POST',
-                //   headers: {
-                //     'Content-Type': 'application/json',
-                //     'Authorization': `Bearer ${aToken}`
-                //   },
-                //   body: JSON.stringify(formData),
-                // });
+                const response = await fetch(`${backendUrl}/api/admin/add-doctors`, {
+                  method: 'POST',
+                  headers: {
+                    // 'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${aToken}`
+                  },
+                  body: (formData),
+                });
             
-            // const data = await response.json(); // Convert response to JSON
+            const data = await response.json(); // Convert response to JSON
 
-            const {data}= await axios.post(backendUrl +'/api/admin/add-doctors',formData,{headers:{aToken}})
+            // const {data}= await axios.post(backendUrl +'/api/admin/add-doctors',formData,{headers:{aToken}})
 
   if (data.success) {
     toast.success(data.message || "Data Saved Successfully"); // Display success message

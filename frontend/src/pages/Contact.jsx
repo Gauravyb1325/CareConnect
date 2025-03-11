@@ -17,8 +17,8 @@ const Contact = () => {
 
         <div className=' flex flex-col justify-center items-start gap-6 '>
           <p className=' font-semibold text-lg text-gray-600 '>Our Office</p>
-          <p className=' text-gray-500'>Ruhelganj Kadirbad near pilli masjid <br />Darbhanga Bihar</p>
-          <p className=' text-gray-500'>Mob: 9262776895 <br />Email:shuman.kr99@gmail.com</p>
+          <p className=' text-gray-500'>Lucknow <br />Uttar Pradesh</p>
+          <p className=' text-gray-500'>Mob: 9999999999 <br />Email: gauravyb1325@gmail.com</p>
           <p className=' font-semibold text-lg text-gray-600 '>Careers at Perscripto</p>
           <p className=' text-gray-500'>Learn more about our teams and job openings</p>
           <button className=' border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'>Explore Jobs</button>

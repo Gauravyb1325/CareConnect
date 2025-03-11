@@ -18,9 +18,9 @@ app.use(express.json());
 // app.use(cors());
 
 const corsOption = {
-    origin: ['http://localhost:52','http://localhost:51'],
+    origin: '*',
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization", "atoken"],
     methods: ["GET", "POST", "PUT", "DELETE"],
 }
 app.use(cors(corsOption));
